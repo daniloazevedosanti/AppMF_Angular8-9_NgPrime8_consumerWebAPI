@@ -1,3 +1,11 @@
+# Descrição AppMF
+Aplicação .Net Core 3.1 com persistência EF6 (banco SQL Server ou PostgresSql) com: 
+Front Angular 8/9 + NgPrime 8, 
+Patterns: MVC + DDD. 
+Links referências: 
+Backend/WebApi: https://github.com/daniloazevedosanti/NET_Core3.1_WebAPI - 
+Pacote Completo: https://github.com/daniloazevedosanti/.NET_Core3.1_WebAPI_Angular8NGPRIME_SistemaConsulta-e-Cadastro
+
 # AppMF
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.9.
