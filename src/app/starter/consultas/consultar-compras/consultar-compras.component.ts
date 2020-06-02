@@ -74,7 +74,7 @@ export class ConsultarComprasComponent implements OnInit {
           if (id == item.PecuaristaId)
             this.tabelaView.push({
               Id: item.Id, DataEntrega: this.pipe.transform(item.DataEntrega, 'dd/MM/yyyy'),
-              Nome: item.Nome, Total: this.current.transform(item.Total, 'BRL')
+              Nome: item.Nome, Total: this.current.transform(item.total, 'BRL')
             });
         }
         this.tabela = this.tabelaView;
@@ -92,7 +92,7 @@ export class ConsultarComprasComponent implements OnInit {
           if (item.DataEntrega >= dataini && item.DataEntrega <= datafim)
             this.tabelaView.push({
               Id: item.Id, DataEntrega: this.pipe.transform(item.DataEntrega, 'dd/MM/yyyy'),
-              Nome: item.Nome, Total: this.current.transform(item.Total, 'BRL')
+              Nome: item.Nome, Total: this.current.transform(item.total, 'BRL')
             });
         }
         this.tabela = this.tabelaView;
@@ -110,7 +110,7 @@ export class ConsultarComprasComponent implements OnInit {
           if (item.PecuaristaId == id && item.DataEntrega >= dataini && item.DataEntrega <= datafim)
             this.tabelaView.push({
               Id: item.Id, DataEntrega: this.pipe.transform(item.DataEntrega, 'dd/MM/yyyy'),
-              Nome: item.Nome, Total: this.current.transform(item.Total, 'BRL')
+              Nome: item.Nome, Total: this.current.transform(item.total, 'BRL')
             });
         }
         this.tabela = this.tabelaView;
