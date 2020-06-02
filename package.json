@@ -1,5 +1,5 @@
 {
-  "name": "app-mf",
+  "name": "appmf",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "heroku-postbuild": "ng build --prod"
+    "postinstall": "ng build --aot"
   },
   "private": true,
   "dependencies": {
@@ -28,6 +28,7 @@
     "jquery": "^3.3.1",
     "jspdf": "^1.5.1",
     "ngx-pagination": "^5.0.0",
+    "path": "^0.12.7",
     "popper.js": "^1.14.3",
     "primeicons": "^4.0.0-rc.2",
     "primeng": "^9.1.0",
@@ -41,10 +42,11 @@
     "@angular/cli": "~9.1.7",
     "@angular/compiler-cli": "~9.1.9",
     "@angular/language-service": "~9.1.9",
-    "@types/node": "^12.11.1",
     "@types/jasmine": "~3.3.8",
     "@types/jasminewd2": "~2.0.3",
+    "@types/node": "^12.11.1",
     "codelyzer": "^5.1.2",
+    "enhanced-resolve": "^3.3.0",
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~4.1.0",
